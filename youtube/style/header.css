@@ -1,0 +1,156 @@
+.header{
+    height: 55px;
+
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+position: fixed;
+top:0;
+left:0;
+right: 0;
+background-color: white;
+border-bottom-width: 1px;
+border-bottom-style: solid;
+border-color: rgb(228,228,228);
+z-index: 200;
+
+
+}
+.ls{
+   
+    
+    display: flex;
+    align-items: center;
+}
+.ms{
+
+    flex:1;
+    margin-left: 70px;
+    margin-right: 30px;
+    max-width: 500px;
+    display:flex;
+    align-items: center;
+}
+.rs{
+    
+    width: 190px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 24px;
+}
+.hanber{
+    height: 24px;
+    margin-left: 24px;
+    margin-right: 24px;
+    
+}
+.logo{
+    height: 20px;
+}
+.searchbar{
+    flex: 1;
+    height:36px; 
+    padding-left:10px;
+    font-size: 16px;
+    border-width: 1px;
+    border-radius: 2px;
+    border-style: solid;
+    border-color: rgb(192,192,192);
+    box-shadow: inset 1px 2px 5px rgba(0, 0, 0, 0.05);
+    margin-left: -1px;
+}
+.searchbar::placeholder{
+    font-family: Roboto, Arial;
+    font-size:16px;
+    font-weight: 400;
+
+}
+.searchbotton{
+    height: 36px;
+    width: 60px;
+    background-color: rgb(240, 240, 240);
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(192,192,192);
+    margin-left:-1px;
+    margin-right: 10px;
+  
+}
+.searchbotton,
+.voicebutton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.searchbotton .tooltip,
+.voicebutton .tooltip{
+    position: absolute;
+    background-color: gray;
+    color:white;
+    padding-top:4px;
+    padding-bottom: 4px;
+    padding-left: 8px;
+    padding-right:8px;
+    border-radius: 2px;
+    font-size: 12px;
+    bottom:-30px;
+    opacity: 0;
+    transition: opacity 0.15s;
+    pointer-events: none;
+    white-space: nowrap;
+}
+.searchbotton:hover .tooltip,
+.voicebutton:hover .tooltip{
+    opacity:1;
+}
+.searchicon{
+    height: 25px;
+    
+   
+
+}
+.voicebutton{
+    height: 40px;
+    width:40px;
+    border: none;
+    margin-left: 8px;
+    border-radius: 20px;
+    background-color: rgb(248, 248, 248);
+    
+}
+.voiceicon{
+    height: 24px;
+    margin-top: 2px;
+}
+.upload{
+    height:24px;
+}
+.apps{
+height: 24px;
+}
+.notification{
+    height: 24px;
+}
+.notificationicon{
+    position: relative;
+}
+.notificationcount{
+    position: absolute;
+    top:-2px;
+    right: -5px;
+    background-color: rgb(200, 0, 0);
+    color:white;
+    font-family: Roboto, Arial;
+    font-size: 11px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top:2px;
+    padding-bottom:2px;
+    border-radius: 10px;
+}
+.mychannel{
+ height: 32px;
+ border-radius: 16px;
+}
